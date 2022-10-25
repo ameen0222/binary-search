@@ -10,18 +10,18 @@ def binarySearch(arr, l, r, x):
         if arr[mid] == x:
             return mid
  
-        # If element is smaller than mid, then it
+       
 
         elif arr[mid] > x:
             return binarySearch(arr, l, mid-1, x)
- #oompi guys
-        # Else the element can only be present
-        # in right subarray
+ 
+       
+
         else:
             return binarySearch(arr, mid + 1, r, x)
  
     else:
-        # Element is not present in the array
+     
         return -1
  
  

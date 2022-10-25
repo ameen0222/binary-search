@@ -1,6 +1,7 @@
 def binarySearch(arr, l, r, x):
  
     # Check base case
+  #first step
     if r >= l:
  
         mid = l + (r - l) // 2
@@ -13,7 +14,7 @@ def binarySearch(arr, l, r, x):
 
         elif arr[mid] > x:
             return binarySearch(arr, l, mid-1, x)
- 
+ #oompi guys
         # Else the element can only be present
         # in right subarray
         else:
@@ -25,7 +26,7 @@ def binarySearch(arr, l, r, x):
  
  
 # code
-arr = [2, 3, 4, 10, 40]
+arr = [2, 3, 4, 10, 30, 40]
 x = 10
  
 # Function call

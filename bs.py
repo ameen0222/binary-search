@@ -10,7 +10,7 @@ def binarySearch(arr, l, r, x):
             return mid
  
         # If element is smaller than mid, then it
-        # can only be present in left subarray
+
         elif arr[mid] > x:
             return binarySearch(arr, l, mid-1, x)
  
@@ -24,7 +24,7 @@ def binarySearch(arr, l, r, x):
         return -1
  
  
-# Driver Code
+# code
 arr = [2, 3, 4, 10, 40]
 x = 10
  

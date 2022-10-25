@@ -1,12 +1,12 @@
 def binarySearch(arr, l, r, x):
  
     # Check base case
-  #first step
+  #simple step
     if r >= l:
  
         mid = l + (r - l) // 2
  
-        # If element is present at the middle itself
+        # If element is present at the middle itself any way
         if arr[mid] == x:
             return mid
  
@@ -15,7 +15,7 @@ def binarySearch(arr, l, r, x):
         elif arr[mid] > x:
             return binarySearch(arr, l, mid-1, x)
  
-       
+       #if element is return
 
         else:
             return binarySearch(arr, mid + 1, r, x)
@@ -25,11 +25,11 @@ def binarySearch(arr, l, r, x):
         return -1
  
  
-# code
-arr = [2, 3, 4, 10, 30, 40]
+#initial code steps completed 
+arr = [2, 3, 4, 10, 40]
 x = 10
  
-# Function call
+# Function call poooooi
 result = binarySearch(arr, 0, len(arr)-1, x)
  
 if result != -1:
